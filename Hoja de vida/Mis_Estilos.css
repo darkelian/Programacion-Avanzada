@@ -1,0 +1,32 @@
+img{
+    display:block;
+    margin:auto;
+    }
+body{background-color:turquoise;
+color: black;
+}
+footer{
+    background-color:black;
+    color:white;
+    text-align:center;
+}
+h1,h2{
+    text-align: center;
+}
+a{
+    color: red;
+    font-size: 30px;
+}
+table{
+    background-color: blueviolet;
+    margin: auto;
+    text-align: center;
+    border-collapse: separate;
+    border: black 3px solid;
+}
+td{
+    margin: auto;
+    text-align: center;
+    border-collapse: separate;
+    border: black 3px solid;
+}
