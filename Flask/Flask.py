@@ -2,6 +2,10 @@ from flask import Flask,render_template
 app = Flask(__name__)
 
 @app.route('/')
+def Principal():
+   return render_template('Principal.html')
+
+@app.route('/Inicio_Elian')
 def Inicio_Elian():
    return render_template('Elian/Inicio.html')
 
