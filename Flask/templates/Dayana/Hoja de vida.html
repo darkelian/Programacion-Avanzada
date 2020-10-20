@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='estilos.css') }}">
+	<title>Hoja de vida</title>
+</head>
+<body style="background-color: #2B2A2A">
+<section class="general">
+	<h1 class="titulo">HOJA DE VIDA</h1>
+	<br>
+	<div align="center" ><img src="{{ url_for('static', filename='Imagenes/fotografia.jpeg') }}" width=18%></div>
+		<br>
+	<div class="texto">
+
+		<p>	Jhesnit Dayana Acuña Calderon
+			<br>
+			Codigo: 20192020120	
+			<br>
+			Telefono: +57 3223059673 
+			<br>
+			jhdacunac@correo.udistrital.edu.co
+		</p>
+	</div>
+	
+	<div align="center">
+		
+		<a href="{{ url_for('Formacion_Dayana') }}"><button class="boton"  >Formacion academica</button></a>
+		<a href="{{ url_for('Tecnologias_Dayana') }}"><button class="boton" >Tecnologias de interes</button></a>
+		
+	</div>
+</section>
+
+
+</body>
+</html>

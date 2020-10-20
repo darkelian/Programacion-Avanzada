@@ -1,0 +1,53 @@
+<html>
+ <head>
+        <title> FORMACIÓN ACADÉMICA </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='Mis_Estilos.css') }}"/>
+ </head>
+    <body>
+        <br/>
+        <h1>FORMACIÓN ACADÉMICA</h1>
+        <table> 
+            <tr>
+                <td>INSTITUCIÓN</td>
+                <td>TÍTULO</td>
+                <td>OBSERVACIONES</td>
+            </tr>
+            <tr> 
+                <td>Escuela Básica Bolivarina "Andrés Bello"</td>
+                <td>Básica Primaria</td>
+                    <td>Completado</td>
+            </tr>
+            <tr> 
+                <td>Instituto Técnico de Cundinamarca</td>
+                <td>Básica Secundaria</td>
+                <td>Completado</td>
+            </tr>
+            <tr> 
+                <td>Institución Educativa "León Xlll"</td>
+                <td>Bachiller Académico</td>
+                <td>Completado</td>
+            </tr>
+            <tr> 
+                <td>Instituto tecnico de Cundinamarca</td>
+                <td>Técnico Laboral por competencias<br/> 
+                    en mecánica industrial </td>
+                <td>Completado</td>
+            </tr>
+            <tr> 
+                <td>SENA</td>
+                <td>Técnico en Logística Empresarial</td>
+                <td>Completado</td>
+            </tr>
+            <tr> 
+                <td>Universidad Distrital Francisco José de Caldas</td>
+                <td>Ingeniería de Sistemas</td>
+                <td>Tercer semestre</td> 
+            </tr>
+        </table>
+        <br/>
+        <a href = "{{ url_for('Inicio_Elian') }}">Inicio</a>
+        <footer>
+            <p>BRAYAN ELIAN PEÑA JAIMES - Universidad Distrital Francisco José Caldas </p>
+        </footer>
+    </body>
+</html>

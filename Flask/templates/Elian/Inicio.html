@@ -1,0 +1,26 @@
+<html>
+    <head>    
+        <title> DATOS PERSONALES </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='Mis_Estilos.css') }}"/>
+    </head>
+    <body>
+        <div>
+        <img src="{{ url_for('static', filename='Imagenes/perfil.jpg') }}" alt="perfil" height="300"/>
+        </div>
+        <div>
+        <h1><br/>DATOS PERSONALES </h1>
+        <br/>
+        <h2>NOMBRES: BRAYAN ELIAN</h2>
+        <h2>APELLIDOS: PEÑA JAIMES</h2>
+        <h2>CODÍGO: 20192020106</h2>
+        </div>
+        <br/>
+        <div>
+        <a href = "{{ url_for('Formacion_Elian') }}">Formación académica</a>
+        <a href = "{{ url_for('Tecnologia_Elian') }}">Tecnologías</a>
+        </div>
+        <footer>
+            <p>BRAYAN ELIAN PEÑA JAIMES - Universidad Distrital Francisco José Caldas </p>
+        </footer>
+    </body>
+ </html> 
