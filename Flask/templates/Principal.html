@@ -1,0 +1,21 @@
+<html>
+    <head>
+<Title>BIENVENIDOS</Title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='estilos.css') }}"/>
+</head>
+<body style="background-color: #154360 ">
+    <br>
+    <H1 class="titulo">BIENVENIDOS</H1>
+    <br>
+    <br>
+    <br>
+    <div align="center" >
+        <img src="{{ url_for('static', filename='Imagenes/perfil.jpg') }}" style="-webkit-border-radius: 100%;-moz-border-radius: 100%;border-radius: 100%;padding:0px;" alt="ELIAN" height="300" width="300">
+        <img src="{{ url_for('static', filename='Imagenes/fotografia.jpeg') }}"style="-webkit-border-radius: 100%;-moz-border-radius: 100%;border-radius: 100%;padding:0px;"  alt="DAYANA" height="300" width="300">
+    </div>
+    <div align="center">
+        <a href="{{ url_for('Inicio_Elian') }}"><button class="boton" >ELIAN</button></a>
+        <a href="{{ url_for('Inicio_Dayana') }}"><button class="boton" >DAYANA</button></a>
+    </div>
+</body>
+</html>
