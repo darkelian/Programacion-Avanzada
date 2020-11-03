@@ -1,0 +1,29 @@
+<html>
+<head>
+  <title>Personas</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='default.css') }}">
+</head>
+  <body>
+     <nav>
+        <a href = "{{ url_for('show_all') }}">Mostrar Personas</a> |
+        <a href = "{{ url_for('new') }}">Agregar Personas</a>
+     </nav>
+     <section>
+       <h3>Personas</h3>
+      <form action = "/update_record" method = "post">
+        <input type = "hidden" name = "oldname" value = "{{ oldname }}" /><br>
+         <label for = "nombre">Nombre</label>
+         <input type = "text" name = "nombre" value = "{{ result.name }}" /><br>
+         <label for = "ciudad">Ciudad</label>
+         <input type = "text" name = "ciudad" value = "{{ result.ciudad }}" /><br>
+         <label for = "direccion">Direccion</label>
+         <input type = "text" name = direccion value = "{{ result.direccion }}" /><br>
+         <label for = "Codigo">Codigo</label>
+         <input type = "text" name = "codigo" value = "{{ result.codigo }}" /><br>
+         <label for = "edad">Edad</label>
+         <input type = "text" name = "edad" value = "{{ result.edad }}" /><br>
+         <input type = "submit" value = "Enviar" />
+      </form>
+    </section>
+   </body>
+</html>

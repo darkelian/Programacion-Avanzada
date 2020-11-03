@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Students</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='default.css') }}">
+</head>
+<body>
+    <h1 class="titulo">HOJAS DE VIDA</h1>
+    <br>
+    <br>
+    <h1 class="titulo">Ingresa los siguientes datos</h1>
+    <div align="center">
+		<a href="{{ url_for('new') }}"><button class="boton"  >Informacion basica</button></a>
+		<a href="{{ url_for('Formacion_academica') }}"><button class="boton"  >Formacion academica</button></a>
+		<a href="{{ url_for('Intereses') }}"><button class="boton" >Tecnologias de interes</button></a>	
+    </div>
+    <br>
+    <br>
+    <div>
+        <a href=" "><button class="boton"  >Visualizar hoja de vida</button></a>
+    </div>
+</body>
+</html>
