@@ -1,25 +1,30 @@
+import os
+ 
 def menu():
-  print("""
-  Elija una opción
-  1) Registrar jugador
-  2) Jugar
-  3) Salir
-  """)
-opcion = input("Seleccione algo : ")
-if opcion =="1":
-    print(":)")   
-   #from jugador import Persona
-    #jugador=Persona()
-    #jugador.imprimir()
-    #menu()
-    break
-if opcion=="2":
-    #from jugar import jugar
-    break
-if opcion =="3":
-    print("¡Gracias or probar nuestro juego!")
-    exit()
-    break
-else:
-    print("Opción inválida, intente nuevamente")
-    menu()
+	"""
+	Función que limpia la pantalla y muestra nuevamente el menu
+	"""
+	os.system('cls') # NOTA para windows tienes que cambiar clear por cls
+	print ("Selecciona una opción")
+	print ("\t1 - Jugar")
+	print ("\t2 - Campeones")
+	print ("\t3 - Salir")
+	
+ 
+ 
+while True:
+	# Mostramos el menu
+	menu()
+ 
+	# solicituamos una opción al usuario
+	opcionMenu = input("Ingresa una opcion >> ")
+ 
+	if opcionMenu=="1":
+		from jugar import jugar 
+	elif opcionMenu=="2":
+		from jugador import jugador
+	elif opcionMenu=="3":
+		break
+	else:
+		print ("")
+		input("Opcion incorrecta :(...\npulsa una tecla para continuar")
