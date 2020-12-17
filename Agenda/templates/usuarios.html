@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <LINK REL=StyleSheet HREF="/static/css/estilo.css" >
+    </head>
+    <body>
+        <div class="Tabla_usuario">
+            <table>
+                <tr>
+                    <th>Usuario</th>
+                    <th>Acciones</th>
+                </tr>
+                {% for u in usuarios%}
+                <tr>
+                    <td>{{ u[1] }}</td>
+                    <td> 
+                        <a href="/actualizar_usuario?id={{ u[0] }}">Editar</a> 
+                        <a href="/eliminar_usuario?id={{ u[0] }}">Eliminar</a> 
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+            <a href="/agregar_usuario">agregar</a>
+        </div>
+    </body>
+
+</html>

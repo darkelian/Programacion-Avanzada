@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Agregar Cita</title>
+        <LINK REL=StyleSheet HREF="/static/css/estilo.css" >
+    </head>
+    <body>
+        <nav>
+            <a href="contactos">Contactos</a>
+            <a href="citas">Citas</a>
+            <a href="usuarios">Usuarios</a>
+        </nav>
+        <form action="{{ request.path }}" method="POST">
+            <label for="Lugar">Lugar: </label>
+            <input type="text" id="Lugar" name="Lugar"/><br>
+            <label for="fecha">fecha: </label>
+            <input type="text" id="fecha" name="fecha"/><br>
+            <label for="hora">hora: </label>
+            <input type="text" id="hora" name="hora"/><br>
+            <label for="descripcion">descripcion: </label>
+            <input type="text" id="descripcion" name="descripcion"/><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,92 @@
+div[class ="Tabla_citas"]{
+  width: 65%;
+  height: 520px;
+  margin: 5% 10%;
+  padding-top: 5px;
+  padding-left:  30px;
+  padding-right: 10%;
+  background-color: white;
+}
+div[class="Tabla_principal"]{
+  width: 65%;
+  height: 520px;
+  margin: 5% 10%;
+  padding-top: 5px;
+  padding-left:  30px;
+  padding-right: 10%;
+  background-color: white;
+}
+div[class="Tabla_usuario"]{
+  width: 65%;
+  height: 520px;
+  margin: 5% 10%;
+  padding-top: 5px;
+  padding-left:  30px;
+  padding-right: 10%;
+  background-color: white;
+}
+body{
+  background:url(/static/css/imagenes/fondo\ agenda\ html.jpg);
+}
+table{
+    border: 1px solid #1883ba;
+    background-color: white;
+}
+th,td{
+width: 20%;
+text-align: center;
+border: 1px solid #1883ba;
+border-collapse: collapse;
+padding: 0.3em;
+caption-side: bottom;
+
+}
+caption{
+  padding: 0.3em;
+  color:#fff;
+  background: #000000;
+}
+th{
+  background: #1883ba;
+}
+  /*  text-align: center;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative; top: 150px;
+  */
+table tr:nth-child(1) {
+	color: #fff;
+	background-color: #1883ba;
+}
+.boton1{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    position:relative; top: -70px; left:680px;
+  }
+  .boton1:hover{
+    color: #1883ba;
+  }
+  .boton2{
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    position:relative; top: -70px; left:680px;
+  }
+  .boton2:hover{
+    color: #1883ba;
+    
+  }
+  .boton3{
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    position:relative; top: -70px; left:680px;
+  }
+  .boton3:hover{
+    color: #1883ba;
+  }
+  div[class= "Imagen_calendario"]{
+    position: relative; top: -20px;left: 100px;
+  }

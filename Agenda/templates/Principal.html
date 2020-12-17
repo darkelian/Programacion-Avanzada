@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+    <head>
+        <LINK REL=StyleSheet type="text/css" HREF="/static/css/estilo.css" media="screen" >
+    </head>
+    
+    <body style="background:url(/static/css/imagenes/fondo\ agenda\ html.jpg)">
+       <div class="Tabla_principal">
+            <h1>
+                AGENDA DE CITAS Y USUARIOS
+            </h1>
+            <br>
+            <a class= "boton1" href="{{ url_for('ver_usuarios') }}">USUARIOS</a>
+            <a class= "boton2" href="{{ url_for('ver_contactos') }}">CONTACTOS</a>
+            <a class= "boton3" href="{{ url_for('ver_citas') }}">CITAS</a>
+            <div class="Imagen_calendario">
+                <img src="/static/css/imagenes/calendario.png" alt="calendario" width="750px" height="400px">
+            </div>
+            
+        </div> 
+    </body>
+</html>
